@@ -1,0 +1,11 @@
+Sitemap: https://example.com/sitemap.xml
+Sitemap: https://www.example.com/sitemap.xml
+
+
+# Block all crawlers for /newsletter
+User-agent: *
+Disallow: /newsletter
+
+# Allow all crawlers
+User-agent: *
+Allow: /
