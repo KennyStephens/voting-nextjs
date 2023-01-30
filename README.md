@@ -20,9 +20,10 @@ TODO:
 - Add in all meta information through `<BasePage />` on the site
 - Write up some blog posts for the website to start SEO and interest (see below)
 - Set up email server
-- Set up deploy pipelines
 - Create script to auto close polls that are past
 - Limit polls and lazy load after 5 or 10
+- Add analytics for views
+- Allow one poll to have its own page?
 
 Emails:
 
@@ -31,11 +32,9 @@ Emails:
 - Create email template for one time login code
 - Create email template for when a new poll opens
 
-Once domain is decided
-
-- Fix sitemap.xml.ts and robots.txt (https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt)
-
 Blog ideas:
+
+(Make sure to internally link to different pages)
 
 - Updates on where the DPC is
 - Find player tweets/org tweets about not enough money in the DPC and talk about them and how we solve the problem

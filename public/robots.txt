@@ -1,5 +1,5 @@
-Sitemap: https://example.com/sitemap.xml
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://neutralstack.io/sitemap.xml
+Sitemap: https://www.neutralstack.io/sitemap.xml
 
 
 # Block all crawlers for /newsletter
