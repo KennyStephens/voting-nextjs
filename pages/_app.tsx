@@ -7,7 +7,7 @@ import "../public/globals.css";
 if (process.env.NODE_ENV == "development") {
   axios.defaults.baseURL = "http://localhost/";
 } else {
-  axios.defaults.baseURL = "https://api.neurtalstack.io/";
+  axios.defaults.baseURL = "https://api.neutralstack.io/";
 }
 
 export default function App({ Component, pageProps }: AppProps) {
