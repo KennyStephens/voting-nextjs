@@ -8,8 +8,8 @@ type Props = {
   pollsData: PollType[];
 };
 
-// Runs at build time
-export async function getStaticProps() {
+// Runs at request time?
+export async function getServerSideProps() {
   const pollsData = await axios.get("polls");
 
   return {

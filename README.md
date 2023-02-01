@@ -16,13 +16,14 @@ Three phases to get data:
 
 TODO:
 
-- Data vizualization for money given to valve and how much goes to teams
-- Add in all meta information through `<BasePage />` on the site
+- Finalize branding and images
+- Add analytics for views
 - Write up some blog posts for the website to start SEO and interest (see below)
-- Set up email server
+- Put a limit on characters for email length
+- Add in all meta information through `<BasePage />` on the site
+- Data vizualization for money given to valve and how much goes to teams
 - Create script to auto close polls that are past
 - Limit polls and lazy load after 5 or 10
-- Add analytics for views
 - Allow one poll to have its own page?
 
 Emails:
