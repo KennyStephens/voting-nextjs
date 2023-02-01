@@ -15,7 +15,7 @@ export default function Options({ p }: Props) {
   const [selected, setSelected] = React.useState<number>(0);
 
   React.useEffect(() => {
-    if (p.votes) setSelected(p.votes[0].decision);
+    if (p.votes && p.votes[0]) setSelected(p.votes[0].decision);
   }, [p]);
 
   const [isOpen, isOpenText] = getIsOpen(poll);
