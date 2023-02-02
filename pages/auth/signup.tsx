@@ -112,11 +112,11 @@ function stepOne({
             setEmail(e.target.value);
           }}
         />
-        {error ? (
+        {error && (
           <p className="text-red-500 text-xs italic">
             Please enter a valid email
           </p>
-        ) : null}
+        )}
       </div>
       <div className="flex mb-3">
         <Switch
@@ -186,11 +186,11 @@ function stepTwo({
           value={code}
           onChange={(e) => setCode(e.target.value)}
         />
-        {error ? (
+        {error && (
           <p className="text-red-500 text-xs italic">
             Please enter a valid code.
           </p>
-        ) : null}
+        )}
       </div>
       <div className="flex justify-between">
         {loading ? null : (

@@ -16,10 +16,10 @@ Three phases to get data:
 
 TODO:
 
+- Implement SWR for error on /polls
 - Finalize branding and images
 - Add analytics for views
 - Write up some blog posts for the website to start SEO and interest (see below)
-- Put a limit on characters for email length
 - Add in all meta information through `<BasePage />` on the site
 - Data vizualization for money given to valve and how much goes to teams
 - Create script to auto close polls that are past
@@ -30,7 +30,6 @@ Emails:
 
 - https://maizzle.com/docs/installation
 - Create email template for newsletter (include unsubscribe link)
-- Create email template for one time login code
 - Create email template for when a new poll opens
 
 Blog ideas:

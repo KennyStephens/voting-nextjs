@@ -8,7 +8,7 @@ type Props = {
   pollsData: PollType[];
 };
 
-// Runs at request time?
+// Consider removing this and only getting the data on the useEffect is the load on the server is too high
 export async function getServerSideProps() {
   const pollsData = await axios.get("polls");
 
@@ -39,14 +39,12 @@ export default function Index({ pollsData }: Props) {
 
   return (
     <BasePage title="Polls">
-      <article>
-        <h1 className="text-center text-3xl p-5">Polls</h1>
-        <div className="container mx-auto">
-          {polls.map((poll: PollType) => {
-            return <Poll key={poll.id} poll={poll} />;
-          })}
-        </div>
-      </article>
+      <h1 className="text-center text-3xl p-5">Polls</h1>
+      <div className="container mx-auto">
+        {polls.map((poll: PollType) => {
+          return <Poll key={poll.id} poll={poll} />;
+        })}
+      </div>
     </BasePage>
   );
 }

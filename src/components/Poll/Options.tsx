@@ -78,9 +78,9 @@ export default function Options({ p }: Props) {
                               } w-full flex justify-between`}
                             >
                               <span>
-                                {poll.result === i + 1 ? (
+                                {poll.result === i + 1 && (
                                   <CheckIcon className="inline h-6 w-6 mr-2" />
-                                ) : null}
+                                )}
                                 {option.option}
                               </span>
                               <span>

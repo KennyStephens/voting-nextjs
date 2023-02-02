@@ -98,11 +98,11 @@ function stepOne({
             setEmail(e.target.value);
           }}
         />
-        {error ? (
+        {error && (
           <p className="text-red-500 text-xs italic">
             Please enter a valid email
           </p>
-        ) : null}
+        )}
       </div>
       <div className="flex justify-end">
         <button
@@ -153,13 +153,13 @@ function stepTwo({
           value={code}
           onChange={(e) => setCode(e.target.value)}
         />
-        {error ? (
+        {error && (
           <p className="text-red-500 text-xs italic">
             Please enter a valid code. Codes expire in 10 minutes from the time
             they were requested. If it has been more than 10 minutes, please use
             the Back button and try again.
           </p>
-        ) : null}
+        )}
       </div>
       <div className="flex justify-between">
         {loading ? null : (

@@ -93,7 +93,7 @@ export default function Newsletter() {
               </button>
             </div>
             <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer">
-              {emailError ? "Invalid email" : null}
+              {emailError && "Invalid email"}
             </div>
           </form>
         </div>
