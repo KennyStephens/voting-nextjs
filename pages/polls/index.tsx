@@ -3,27 +3,29 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { Poll as PollType } from "@types";
 import { BasePage, Poll } from "@components";
+import { RequestContext } from "next/dist/server/base-server";
 
 type Props = {
-  pollsData: PollType[];
+  polls: PollType[];
 };
 
-export default function Index() {
-  const [polls, setPolls] = React.useState<PollType[]>([]);
+// Consider removing this and only getting the data on the useEffect is the load on the server is too high
+export async function getServerSideProps({ req }: RequestContext) {
+  const jwt = Cookies.get(req.headers.cookie || "");
+  const pollsData = await axios.get("polls", {
+    headers: {
+      Authorization: "Bearer " + jwt,
+    },
+  });
 
-  // If a user is logged in, run the fetch on client to get their votes
-  React.useEffect(() => {
-    (async () => {
-      const jwt = Cookies.get("auth");
-      const secondData = await axios.get("polls", {
-        headers: {
-          Authorization: "Bearer " + jwt,
-        },
-      });
-      setPolls(secondData.data);
-    })();
-  }, []);
+  return {
+    props: {
+      pollsData: pollsData.data,
+    },
+  };
+}
 
+export default function Index({ polls }: Props) {
   return (
     <BasePage title="Polls">
       <h1 className="text-center text-3xl p-5">Polls</h1>
