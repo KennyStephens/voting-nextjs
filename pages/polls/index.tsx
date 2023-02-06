@@ -1,44 +1,26 @@
 import React from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import dynamic from "next/dynamic";
 import { Poll as PollType } from "@types";
-import { BasePage } from "@components";
-
-const Poll = dynamic(() => import("src/components/Poll/Poll"), {
-  ssr: false,
-});
+import { BasePage, Poll } from "@components";
 
 type Props = {
   pollsData: PollType[];
 };
 
-// Consider removing this and only getting the data on the useEffect is the load on the server is too high
-export async function getServerSideProps() {
-  const pollsData = await axios.get("polls");
-
-  return {
-    props: {
-      pollsData: pollsData.data,
-    },
-  };
-}
-
-export default function Index({ pollsData }: Props) {
-  const [polls, setPolls] = React.useState<PollType[]>(pollsData);
+export default function Index() {
+  const [polls, setPolls] = React.useState<PollType[]>([]);
 
   // If a user is logged in, run the fetch on client to get their votes
   React.useEffect(() => {
     (async () => {
       const jwt = Cookies.get("auth");
-      if (jwt) {
-        const secondData = await axios.get("polls", {
-          headers: {
-            Authorization: "Bearer " + jwt,
-          },
-        });
-        setPolls(secondData.data);
-      }
+      const secondData = await axios.get("polls", {
+        headers: {
+          Authorization: "Bearer " + jwt,
+        },
+      });
+      setPolls(secondData.data);
     })();
   }, []);
 
