@@ -16,7 +16,6 @@ Three phases to get data:
 
 TODO:
 
-- Implement SWR for error on /polls
 - Finalize branding and images
 - Add analytics for views
 - Write up some blog posts for the website to start SEO and interest (see below)

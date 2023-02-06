@@ -20,9 +20,9 @@ export default function Menu() {
             >
               <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
                 <Link href="/">
-                  <span className="sr-only">Your Company</span>
+                  <span className="sr-only">NeutralStack</span>
                   <Image
-                    src="/images/mark.svg"
+                    src="/images/Logo.png"
                     alt="Company Logo"
                     width={50}
                     height={32}
@@ -51,9 +51,9 @@ export default function Menu() {
                 <div className="flex h-9 items-center justify-between">
                   <div className="flex">
                     <Link href="/" className="-m-1.5 p-1.5">
-                      <span className="sr-only">Your Company</span>
+                      <span className="sr-only">Neutral Stack</span>
                       <Image
-                        src="/images/mark.svg"
+                        src="/images/Logo.png"
                         alt="Company Logo"
                         width={50}
                         height={32}

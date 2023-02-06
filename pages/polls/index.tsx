@@ -9,7 +9,6 @@ type Props = {
   polls: PollType[];
 };
 
-// Consider removing this and only getting the data on the useEffect is the load on the server is too high
 export async function getServerSideProps({ req }: RequestContext) {
   const jwt = Cookies.get(req.headers.cookie || "");
   const pollsData = await axios.get("polls", {
@@ -20,7 +19,7 @@ export async function getServerSideProps({ req }: RequestContext) {
 
   return {
     props: {
-      pollsData: pollsData.data,
+      polls: pollsData.data,
     },
   };
 }
