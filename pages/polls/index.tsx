@@ -1,8 +1,13 @@
 import React from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import dynamic from "next/dynamic";
 import { Poll as PollType } from "@types";
-import { BasePage, Poll } from "@components";
+import { BasePage } from "@components";
+
+const Poll = dynamic(() => import("src/components/Poll/Poll"), {
+  ssr: false,
+});
 
 type Props = {
   pollsData: PollType[];

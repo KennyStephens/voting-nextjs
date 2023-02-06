@@ -7,7 +7,7 @@ export default function Index() {
   const router = useRouter();
 
   const [step, setStep] = React.useState(true);
-  const [email, setEmail] = React.useState("admin@testman.com");
+  const [email, setEmail] = React.useState("riderjensen@gmail.com");
   const [code, setCode] = React.useState("");
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(false);
@@ -52,7 +52,12 @@ export default function Index() {
     <BasePage title="Login">
       <h1 className="text-center text-3xl p-5">Login</h1>
       <div className="mx-auto w-96">
-        <form>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            return false;
+          }}
+        >
           {step
             ? stepOne({ email, setEmail, loading, error, request })
             : stepTwo({
