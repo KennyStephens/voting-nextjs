@@ -13,7 +13,7 @@ export default function Index() {
   const router = useRouter();
 
   const [step, setStep] = React.useState(true);
-  const [email, setEmail] = React.useState("riderjensen@gmail.com");
+  const [email, setEmail] = React.useState("");
   const [code, setCode] = React.useState("");
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(false);
