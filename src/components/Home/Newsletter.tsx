@@ -88,7 +88,7 @@ export default function Newsletter() {
                 {success ? (
                   "Success!"
                 ) : loading ? (
-                  <LoadingIcon className="w-6 h-full text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" />
+                  <LoadingIcon className="w-6 h-full text-gray-200 animate-spin fill-blue-600" />
                 ) : (
                   "Subscribe"
                 )}

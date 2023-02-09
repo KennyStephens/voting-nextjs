@@ -6,10 +6,10 @@ export default function Timeline() {
       <h2 className="text-3xl font-bold tracking-tight text-center text-gray-900 mb-10 sm:text-4xl">
         Our Timeline
       </h2>
-      <ol className="relative border-l border-gray-200 dark:border-gray-700 mx-6">
+      <ol className="relative border-l border-gray-200 mx-6">
         <li className="mb-10 ml-4">
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <div className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 border border-gray-900 bg-gray-700"></div>
+          <time className="mb-1 text-sm font-normal leading-none text-gray-400">
             June 2023
           </time>
           <h3 className="text-lg font-semibold text-gray-900">Awareness</h3>
@@ -20,7 +20,7 @@ export default function Timeline() {
           {/* An example button that we could use to link to other pages */}
           {/* <a
             href="#"
-            className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
           >
             Learn more{" "}
             <svg

@@ -16,7 +16,6 @@ Three phases to get data:
 
 TODO:
 
-- Remove flash of unstyled content
 - Add analytics for views
 - Write up some blog posts for the website to start SEO and interest (see below)
 - Data vizualization for money given to valve and how much goes to teams

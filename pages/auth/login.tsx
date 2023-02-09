@@ -129,7 +129,7 @@ function stepOne({
           disabled={loading}
         >
           {loading ? (
-            <LoadingIcon className="w-6 h-full text-gray-200 animate-spin dark:text-gray-600 fill-indigo-600" />
+            <LoadingIcon className="w-6 h-full text-gray-200 animate-spin fill-indigo-600" />
           ) : (
             "Next"
           )}
@@ -200,7 +200,7 @@ function stepTwo({
           disabled={loading}
         >
           {loading ? (
-            <LoadingIcon className="w-6 h-full text-gray-200 animate-spin dark:text-gray-600 fill-indigo-600" />
+            <LoadingIcon className="w-6 h-full text-gray-200 animate-spin fill-indigo-600" />
           ) : (
             "Login"
           )}

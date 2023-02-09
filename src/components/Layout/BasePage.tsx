@@ -30,7 +30,6 @@ export default function BasePage({
         {metaDesc && <meta property="og:description" content={meta} />}
         {metaTitle && <meta property="og:title" content={metaTitle} />}
         {metaImage && <meta property="og:image" content={metaImage} />}
-        <script>0</script>
       </Head>
       <div className="flex flex-col h-screen">
         <Menu />
