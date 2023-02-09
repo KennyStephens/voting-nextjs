@@ -33,7 +33,7 @@ Blog ideas:
 
 (Make sure to internally link to different pages)
 
-- Copy data from google docs about why people should make more
+- Copy data from google docs about why people should make mores
 - Updates on where the DPC is
 - Find player tweets/org tweets about not enough money in the DPC and talk about them and how we solve the problem
 - Case studies on performance of people playing a game more hours and getting better at it
