@@ -8,7 +8,7 @@ type props = {
 
 export default function BlogPreview({ postPreviews }: props) {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-10">
       <section className="container mx-auto">
         <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
           Blog

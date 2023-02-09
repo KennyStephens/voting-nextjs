@@ -13,14 +13,14 @@ export default function Features() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-indigo-600">
-              Transactions
+              Power To The Players
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              A better way to send money
+              Don&apos;t waste money on other teams
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              Support your favorite players directly while pushing for change in
+              the community.
             </p>
           </div>
 
@@ -32,12 +32,11 @@ export default function Features() {
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
                   <p className="text-lg font-semibold leading-8 text-gray-900">
-                    Competitive exchange rates
+                    Support the players
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Help division two players make it big with your
+                    contributions directly to the team.
                   </p>
                 </div>
               </div>
@@ -48,12 +47,11 @@ export default function Features() {
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
                   <p className="text-lg font-semibold leading-8 text-gray-900">
-                    No hidden fees
+                    1:1 Voting Power
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    The more you donate to the team, the higher your voting
+                    power will be.
                   </p>
                 </div>
               </div>
@@ -64,12 +62,11 @@ export default function Features() {
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
                   <p className="text-lg font-semibold leading-8 text-gray-900">
-                    Transfers are instant
+                    Money back guaruntee
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    If the team doesn&apos;t make it past the open qualifiers,
+                    all money gets refunded.
                   </p>
                 </div>
               </div>
@@ -80,12 +77,11 @@ export default function Features() {
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
                   <p className="text-lg font-semibold leading-8 text-gray-900">
-                    Mobile notifications
+                    True transparency
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    We publish team bank statements every month so you know
+                    right where your money goes.
                   </p>
                 </div>
               </div>

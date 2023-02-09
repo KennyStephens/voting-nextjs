@@ -26,9 +26,21 @@ export async function getStaticProps() {
   };
 }
 
+const title = "Home | NeutralStack.io";
+const meta =
+  "Join the first ever community owned eSports team and let your voice be heard in our community run polls. Help support DotA 2 divsion 2 players.";
+const metaImage =
+  "https://neutralstack.io/_next/image?url=%2Fimages%2Flogo.png";
+
 export default function Home({ postPreviews }: Props) {
   return (
-    <BasePage title="Home">
+    <BasePage
+      title={title}
+      meta={meta}
+      metaDesc={meta}
+      metaTitle={title}
+      metaImage={metaImage}
+    >
       <Hero />
       <Features />
       <Newsletter />

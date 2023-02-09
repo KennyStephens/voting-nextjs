@@ -16,10 +16,8 @@ Three phases to get data:
 
 TODO:
 
-- Finalize branding and images
 - Add analytics for views
 - Write up some blog posts for the website to start SEO and interest (see below)
-- Add in all meta information through `<BasePage />` on the site
 - Data vizualization for money given to valve and how much goes to teams
 - Create script to auto close polls that are past
 - Limit polls and lazy load after 5 or 10
@@ -35,15 +33,9 @@ Blog ideas:
 
 (Make sure to internally link to different pages)
 
+- Copy data from google docs about why people should make more
 - Updates on where the DPC is
 - Find player tweets/org tweets about not enough money in the DPC and talk about them and how we solve the problem
 - Case studies on performance of people playing a game more hours and getting better at it
 - Explain the logic behind why we should pay more money to players and less to valve
 - Talk about when a team had to forfeit because players had jobs to do (bounty hunter team?)
-
-About Page:
-
-- What is neutralstack.io?
-- What is our goal?
-- Why are we doing this?
-- How are we doing this?

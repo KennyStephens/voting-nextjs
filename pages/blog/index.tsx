@@ -18,11 +18,23 @@ export async function getStaticProps() {
   };
 }
 
+const title = "Blog | NeutralStack.io";
+const meta =
+  "Read the most current news, upcoming matches, and technical information for the world's first community owned eSports team.";
+const metaImage =
+  "https://neutralstack.io/_next/image?url=%2Fimages%2Flogo.png";
+
 export default function Index({ postData }: Props) {
   return (
-    <BasePage title="Blog">
+    <BasePage
+      title={title}
+      meta={meta}
+      metaDesc={meta}
+      metaTitle={title}
+      metaImage={metaImage}
+    >
       <article>
-        <h1 className="text-center text-3xl p-5">Blog Index</h1>
+        <h1 className="text-center text-3xl p-5">Recent Posts</h1>
         <div className="container mx-auto">
           {postData.map((preview: PostPreview) => (
             <PreviewTile key={preview.id} preview={preview} />

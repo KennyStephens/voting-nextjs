@@ -38,9 +38,9 @@ type Props = {
 export default function Post({ postData }: Props) {
   return (
     <BasePage title={postData.title}>
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto p-4 lg:px-10">
         <article>
-          <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+          <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-2">
             {postData.title}
           </h1>
           <div className="text-sm">

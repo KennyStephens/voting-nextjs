@@ -3,6 +3,12 @@ import { BasePage, LoadingIcon } from "@components";
 import { useCodeRequest, useCodeValidate } from "@data";
 import { useRouter } from "next/router";
 
+const title = "Log In | NeutralStack.io";
+const meta =
+  "Log in to your account in order to use your voting power in the community run polls.";
+const metaImage =
+  "https://neutralstack.io/_next/image?url=%2Fimages%2Flogo.png";
+
 export default function Index() {
   const router = useRouter();
 
@@ -49,7 +55,13 @@ export default function Index() {
   };
 
   return (
-    <BasePage title="Login">
+    <BasePage
+      title={title}
+      meta={meta}
+      metaDesc={meta}
+      metaTitle={title}
+      metaImage={metaImage}
+    >
       <h1 className="text-center text-3xl p-5">Login</h1>
       <div className="mx-auto w-96">
         <form

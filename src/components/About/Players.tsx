@@ -12,7 +12,7 @@ export default function Players({ players }: props) {
       <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
         Our Team
       </h2>
-      <div className="mx-auto max-w-7xl py-12 px-6 lg:flex lg:items-center lg:justify-between lg:flex-wrap lg:items-stretch lg:py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-around md:flex-wrap md:items-stretch md:py-16 md:px-8">
         {players.map((player) => (
           <PlayerCard key={player.role} player={player} />
         ))}

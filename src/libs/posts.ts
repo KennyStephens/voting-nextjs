@@ -64,6 +64,9 @@ export async function getPostData(id: string): Promise<Post> {
     .use(addClasses, {
       img: "mx-auto",
       p: "mb-5",
+      h2: "text-2xl mb-4 font-semibold",
+      a: "underline text-indigo-900",
+      ol: "mb-5 list-decimal ml-5",
     })
     .process(matterResult.content);
   const contentHtml = processedContent.toString();

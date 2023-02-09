@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Hero() {
@@ -33,7 +34,8 @@ export default function Hero() {
         </div>
         <div className="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
           <div>
-            <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            {/* Used for when the donate link is up and running */}
+            {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 <span className="text-gray-600">
                   Announcing our next round of funding.{" "}
@@ -43,35 +45,36 @@ export default function Hero() {
                   </a>
                 </span>
               </div>
-            </div>
+            </div> */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                Data to enrich your online business
+                Create history one vote at a time
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                Join the first ever community owned eSports team and have a say
+                in how the team operates.
               </p>
               <div className="mt-8 flex gap-x-4 sm:justify-center">
-                <a
-                  href="#"
+                <Link
+                  prefetch={false}
+                  href="/auth/signup"
                   className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                 >
-                  Get started{" "}
+                  Create An Account{" "}
                   <span className="text-indigo-200" aria-hidden="true">
                     &rarr;
                   </span>
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  prefetch={false}
+                  href="/about"
                   className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
                 >
-                  Live demo{" "}
+                  Read More{" "}
                   <span className="text-gray-400" aria-hidden="true">
                     &rarr;
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">

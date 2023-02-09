@@ -23,6 +23,7 @@ export default function PreviewTile({ preview }: Props) {
         <p className="text-slate-500">{preview.excerpt}</p>
         <p className="pt-2 text-right sm:text-left">
           <Link
+            prefetch={false}
             href={`/blog/${preview.id}`}
             className="text-blue-500 hover:text-blue-300"
           >

@@ -9,12 +9,11 @@ export default function Promo() {
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
               <h1 className="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Summer styles are finally here
+                Join our growing community
               </h1>
               <p className="mt-4 text-xl text-gray-500">
-                This year, our new summer collection will shelter you from the
-                harsh elements of a world that doesn&apos;t care if you live or
-                die.
+                Make history by joining the world&apos;s first crowdfunded
+                eSports team and see the difference you can make.
               </p>
             </div>
             <div>
@@ -28,69 +27,69 @@ export default function Promo() {
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                           <Image
-                            src="/images/promo/home-page-03-hero-image-tile-01.jpg"
+                            src="/images/promo/promo-1.jpg"
                             alt=""
                             className="h-full w-full object-cover object-center"
-                            height={512}
-                            width={352}
+                            height={338}
+                            width={338}
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
-                            src="/images/promo/home-page-03-hero-image-tile-02.jpg"
+                            src="/images/promo/promo-2.jpg"
                             alt=""
                             className="h-full w-full object-cover object-center"
-                            height={512}
-                            width={352}
-                          />
-                        </div>
-                      </div>
-                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <Image
-                            src="/images/promo/home-page-03-hero-image-tile-03.jpg"
-                            alt=""
-                            className="h-full w-full object-cover object-center"
-                            height={512}
-                            width={352}
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <Image
-                            src="/images/promo/home-page-03-hero-image-tile-04.jpg"
-                            alt=""
-                            className="h-full w-full object-cover object-center"
-                            height={512}
-                            width={352}
-                          />
-                        </div>
-                        <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <Image
-                            src="/images/promo/home-page-03-hero-image-tile-05.jpg"
-                            alt=""
-                            className="h-full w-full object-cover object-center"
-                            height={512}
-                            width={352}
+                            height={338}
+                            width={338}
                           />
                         </div>
                       </div>
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
-                            src="/images/promo/home-page-03-hero-image-tile-06.jpg"
+                            src="/images/promo/promo-3.jpg"
                             alt=""
                             className="h-full w-full object-cover object-center"
-                            height={512}
-                            width={352}
+                            height={338}
+                            width={338}
                           />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <Image
-                            src="/images/promo/home-page-03-hero-image-tile-07.jpg"
+                            src="/images/promo/promo-4.jpg"
                             alt=""
                             className="h-full w-full object-cover object-center"
-                            height={512}
-                            width={352}
+                            height={338}
+                            width={338}
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <Image
+                            src="/images/promo/promo-5.jpg"
+                            alt=""
+                            className="h-full w-full object-cover object-center"
+                            height={338}
+                            width={338}
+                          />
+                        </div>
+                      </div>
+                      <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <Image
+                            src="/images/promo/promo-6.jpg"
+                            alt=""
+                            className="h-full w-full object-cover object-center"
+                            height={338}
+                            width={338}
+                          />
+                        </div>
+                        <div className="h-64 w-44 overflow-hidden rounded-lg">
+                          <Image
+                            src="/images/promo/promo-7.jpg"
+                            alt=""
+                            className="h-full w-full object-cover object-center"
+                            height={338}
+                            width={338}
                           />
                         </div>
                       </div>
@@ -98,12 +97,12 @@ export default function Promo() {
                   </div>
                 </div>
 
-                <a
+                {/* <a
                   href="#"
                   className="inline-block rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-center font-medium text-white hover:bg-indigo-700"
                 >
                   Shop Collection
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

@@ -35,15 +35,15 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="bg-white">
+    <section className="bg-gray-50">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight text-gray-900 sm:text-4xl">
             Sign up for our newsletter
           </h2>
           <p className="mx-auto mb-8 max-w-2xl font-light text-gray-800 md:mb-12 sm:text-xl">
-            Stay up to date with the roadmap progress, announcements and
-            exclusive discounts feel free to sign up with your email.
+            Sign up with your email to stay up to date with progress on the
+            project, new polls, and updates on the team.
           </p>
           <form
             onSubmit={(e) => {
@@ -83,9 +83,11 @@ export default function Newsletter() {
               <button
                 type="submit"
                 className="px-5 text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-indigo-700 border-indigo-600 sm:rounded-none sm:rounded-r-lg hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 disabled:cursor-not-allowed"
-                disabled={loading || !email || emailError}
+                disabled={loading || !email || emailError || !!success}
               >
-                {loading ? (
+                {success ? (
+                  "Success!"
+                ) : loading ? (
                   <LoadingIcon className="w-6 h-full text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" />
                 ) : (
                   "Subscribe"
