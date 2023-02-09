@@ -29,12 +29,8 @@ export default function BasePage({
         {/* This description for so social shares? Not really sure but it comes up in like the description section when you share a page I think */}
         {metaDesc && <meta property="og:description" content={meta} />}
         {metaTitle && <meta property="og:title" content={metaTitle} />}
-        {metaImage && (
-          <meta
-            property="og:image"
-            content="https://example.com/images/cool-page.jpg"
-          />
-        )}
+        {metaImage && <meta property="og:image" content={metaImage} />}
+        <script>0</script>
       </Head>
       <div className="flex flex-col h-screen">
         <Menu />

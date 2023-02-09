@@ -25,8 +25,8 @@ export default function Menu() {
                     className="inline"
                     src="/images/logo.png"
                     alt="Company Logo"
-                    width={64}
-                    height={64}
+                    width={50}
+                    height={50}
                   />
                   <p className="text-indigo-900 font-semibold tracking-tight inline ml-3">
                     NeutralStack
@@ -53,15 +53,19 @@ export default function Menu() {
             <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
               <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
                 <div className="flex h-9 items-center justify-between">
-                  <div className="flex">
-                    <Link prefetch={false} href="/" className="-m-1.5 p-1.5">
+                  <div className="flex justify-center w-full">
+                    <Link href="/" className="-m-1.5 p-1.5">
                       <span className="sr-only">Neutral Stack</span>
                       <Image
+                        className="inline"
                         src="/images/logo.png"
                         alt="Company Logo"
-                        width={64}
-                        height={64}
+                        width={50}
+                        height={50}
                       />
+                      <p className="text-indigo-900 font-semibold tracking-tight inline ml-3">
+                        NeutralStack
+                      </p>
                     </Link>
                   </div>
                   <div className="flex">
