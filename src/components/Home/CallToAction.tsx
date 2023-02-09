@@ -27,7 +27,7 @@ export default function CallToAction() {
               href="/about"
               className="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
             >
-              Learn more
+              About Us
             </Link>
           </div>
         </div>
