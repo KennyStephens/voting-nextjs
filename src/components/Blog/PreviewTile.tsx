@@ -20,14 +20,14 @@ export default function PreviewTile({ preview }: Props) {
       <div className="p-8">
         <p className="text-sm pb-2">{preview.date}</p>
         <p className="font-bold text-lg">{preview.title}</p>
-        <p className="text-slate-500">{preview.excerpt}</p>
+        <p className="text-slate-600">{preview.excerpt}</p>
         <p className="pt-2 text-right sm:text-left">
           <Link
             prefetch={false}
             href={`/blog/${preview.id}`}
-            className="text-blue-500 hover:text-blue-300"
+            className="text-indigo-700 hover:text-indigo-500"
           >
-            Read More
+            Read {preview.title}
           </Link>
         </p>
       </div>

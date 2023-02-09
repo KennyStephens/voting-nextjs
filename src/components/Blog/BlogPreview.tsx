@@ -13,11 +13,11 @@ export default function BlogPreview({ postPreviews }: props) {
         <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
           Blog
         </h2>
-        <ul>
+        <div className="block">
           {postPreviews.map((post) => (
             <PreviewTile key={post.id} preview={post} />
           ))}
-        </ul>
+        </div>
       </section>
     </div>
   );

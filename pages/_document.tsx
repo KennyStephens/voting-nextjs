@@ -4,7 +4,7 @@ import Script from "next/script";
 // This file is purely to stop the flash of unstyled content
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head />
       <Script src="/theme.js" strategy="beforeInteractive" />
       <body>
