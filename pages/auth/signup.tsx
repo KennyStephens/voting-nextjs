@@ -1,8 +1,8 @@
 import React from "react";
-import { BasePage, LoadingIcon } from "@components";
-import { useCodeRequest, useCodeValidate } from "@data";
 import { useRouter } from "next/router";
 import { Switch } from "@headlessui/react";
+import { BasePage, LoadingIcon } from "@components";
+import { useCodeRequest, useCodeValidate } from "@data";
 
 const title = "Sign Up | NeutralStack.io";
 const meta =
@@ -157,11 +157,7 @@ function stepOne({
           onClick={() => request()}
           disabled={loading}
         >
-          {loading ? (
-            <LoadingIcon className="w-6 h-full text-gray-200 animate-spin fill-indigo-600" />
-          ) : (
-            "Next"
-          )}
+          {loading ? <LoadingIcon /> : "Next"}
         </button>
       </div>
     </>
@@ -205,10 +201,13 @@ function stepTwo({
         )}
       </div>
       <div className="flex justify-between">
-        {loading ? null : (
+        {loading ? (
+          // Empty div to hold the place of the far button
+          <div></div>
+        ) : (
           <button
             type="button"
-            className="rounded-md border border-transparent bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-900 hover:bg-indigo-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
+            className=" rounded-md px-4 py-2 text-sm font-medium text-indigo-900 hover:underline hover:text-indigo-700"
             onClick={() => {
               setError(false);
               setStep(true);
@@ -216,7 +215,7 @@ function stepTwo({
             }}
             disabled={loading}
           >
-            Back
+            Previous
           </button>
         )}
         <button
@@ -225,11 +224,7 @@ function stepTwo({
           onClick={() => submit()}
           disabled={loading}
         >
-          {loading ? (
-            <LoadingIcon className="w-6 h-full text-gray-200 animate-spin fill-indigo-600" />
-          ) : (
-            "Sign Up"
-          )}
+          {loading ? <LoadingIcon /> : "Sign Up"}
         </button>
       </div>
     </>

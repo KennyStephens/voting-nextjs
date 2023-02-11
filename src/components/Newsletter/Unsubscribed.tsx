@@ -8,7 +8,6 @@ export default function Unsubscribed() {
   const { optOut } = useOptOut();
 
   React.useEffect(() => {
-    console.log(email);
     if (typeof email === "string") {
       optOut(email);
     }

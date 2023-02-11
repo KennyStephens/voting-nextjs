@@ -16,8 +16,10 @@ Three phases to get data:
 
 TODO:
 
+- Add information about how this avoids shady gambling sponsors?
+- Change blog post to have image showing
 - Add analytics for views
-- Write up some blog posts for the website to start SEO and interest (see below)
+- Continue blog posts
 - Data vizualization for money given to valve and how much goes to teams
 - Create script to auto close polls that are past
 - Limit polls and lazy load after 5 or 10
@@ -25,9 +27,8 @@ TODO:
 
 Emails:
 
-- https://maizzle.com/docs/installation
 - Create email template for newsletter (include unsubscribe link)
-- Create email template for when a new poll opens
+- Create an email template for a poll closing soon? Maybe not...
 
 Blog ideas:
 

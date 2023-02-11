@@ -1,8 +1,8 @@
 import React from "react";
 import { RadioGroup } from "@headlessui/react";
-import { Option, Poll, Vote } from "@types";
-import { useCurrentUser } from "@data";
-import { useVote } from "@data";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import { Option, Poll } from "@types";
+import { useCurrentUser, useVote } from "@data";
 
 type Props = {
   p: Poll;
@@ -79,7 +79,7 @@ export default function Options({ p }: Props) {
                             >
                               <span>
                                 {poll.result === i + 1 && (
-                                  <CheckIcon className="inline h-6 w-6 mr-2" />
+                                  <CheckCircleIcon className="inline text-indigo-900 h-6 w-6 mr-2" />
                                 )}
                                 {option.option}
                               </span>
@@ -117,23 +117,4 @@ function getIsOpen(poll: Poll) {
   const isOpen = poll.open && dayDifference > 0;
   const isOpenText = poll.open && dayDifference > 0 ? pollInfo : "Closed";
   return [isOpen, isOpenText];
-}
-
-type CheckIconProps = {
-  className: string;
-};
-
-function CheckIcon({ className }: CheckIconProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className={className}>
-      <circle cx={12} cy={12} r={12} fill="#000" opacity="0.2" />
-      <path
-        d="M7 13l3 3 7-7"
-        stroke="#000"
-        strokeWidth={1.5}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
 }

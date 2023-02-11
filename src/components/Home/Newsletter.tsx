@@ -1,7 +1,8 @@
 import React from "react";
+import { CheckIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import { LoadingIcon } from "@components";
 import { useOptIn } from "@data";
-import { validateEmail } from "src/utils/Validation";
+import { validEmail } from "src/utils/Validation";
 
 export default function Newsletter() {
   const [email, setEmail] = React.useState<string>("");
@@ -12,7 +13,7 @@ export default function Newsletter() {
 
   const valEmail = () => {
     if (email !== "") {
-      setEmailError(validateEmail(email));
+      setEmailError(!validEmail(email));
     }
   };
 
@@ -25,6 +26,7 @@ export default function Newsletter() {
         setLoading(false);
         if (opted) {
           setSuccess(true);
+          setEmail("");
         }
       } catch (err) {
         console.log(err);
@@ -51,7 +53,7 @@ export default function Newsletter() {
               submit();
             }}
           >
-            <div className="flex mx-auto mb-3 space-y-4 max-w-screen-sm  sm:space-y-0">
+            <div className="flex flex-col mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex-row sm:space-y-0">
               <div className="grow relative w-full">
                 <label
                   htmlFor="email"
@@ -60,18 +62,14 @@ export default function Newsletter() {
                   Email address
                 </label>
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg
-                    className="w-5 h-5 text-gray-500"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
+                  {success ? (
+                    <CheckIcon className="w-5 h-5 text-green-500" />
+                  ) : (
+                    <EnvelopeIcon className="w-5 h-5 text-gray-500" />
+                  )}
                 </div>
                 <input
-                  className={`block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-indigo-500 focus:border-indigo-500`}
+                  className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:border-indigo-500 sm:rounded-none sm:rounded-l-lg"
                   placeholder="Enter your email"
                   type="email"
                   id="email"
@@ -82,20 +80,15 @@ export default function Newsletter() {
               </div>
               <button
                 type="submit"
-                className="px-5 text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-indigo-700 border-indigo-600 sm:rounded-none sm:rounded-r-lg hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 disabled:cursor-not-allowed"
+                className="p-3 sm:px-5 w-100 sm:w-30 text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-indigo-700 border-indigo-600 sm:rounded-none sm:rounded-r-lg hover:bg-indigo-800 disabled:cursor-not-allowed"
                 disabled={loading || !email || emailError || !!success}
               >
-                {success ? (
-                  "Success!"
-                ) : loading ? (
-                  <LoadingIcon className="w-6 h-full text-gray-200 animate-spin fill-blue-600" />
-                ) : (
-                  "Subscribe"
-                )}
+                {success ? "Success!" : loading ? <LoadingIcon /> : "Subscribe"}
               </button>
             </div>
-            <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer">
-              {emailError && "Invalid email"}
+            <div className="mx-auto max-w-screen-sm text-sm text-left text-red-500 newsletter-form-footer">
+              {emailError &&
+                "Emails must follow the correct format (e.g. fakename@myaddress.com)."}
             </div>
           </form>
         </div>
