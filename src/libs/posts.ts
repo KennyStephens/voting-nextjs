@@ -62,10 +62,8 @@ export async function getPostData(id: string): Promise<Post> {
     // Seems like these classes only work if they are used in other places in the app
     // Guess is that tailwind compiles and only includes some things but not others
     .use(addClasses, {
-      img: "mx-auto",
       p: "mb-5",
       h2: "text-2xl mb-4 font-semibold",
-      a: "underline text-indigo-900",
       ol: "mb-5 list-decimal ml-5",
     })
     .process(matterResult.content);

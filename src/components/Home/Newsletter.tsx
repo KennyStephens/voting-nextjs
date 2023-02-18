@@ -37,7 +37,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="bg-gray-50">
+    <section className="bg-gray-50" id="newsletter">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight text-gray-900 sm:text-4xl">

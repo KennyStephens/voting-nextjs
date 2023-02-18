@@ -35,10 +35,21 @@ type Props = {
   postData: PostType;
 };
 
+const css = `
+article a {
+  color: rgb(49 46 129);
+  text-decoration: underline;
+}
+article img: {
+  margin: 0 auto;
+}
+`;
+
 export default function Post({ postData }: Props) {
   return (
     <BasePage title={postData.title}>
       <div className="container mx-auto p-4 lg:px-10">
+        <style>{css}</style>
         <article>
           <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl mb-2">
             {postData.title}

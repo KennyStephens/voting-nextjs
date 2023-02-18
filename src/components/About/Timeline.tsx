@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Timeline() {
   return (
-    <div className="max-w-2xl mx-auto py-10">
+    <div className="max-w-2xl mx-auto py-10" id="timeline">
       <h2 className="text-3xl font-bold tracking-tight text-center text-gray-900 mb-10 sm:text-4xl">
         Our Timeline
       </h2>

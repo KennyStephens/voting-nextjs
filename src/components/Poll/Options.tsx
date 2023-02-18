@@ -27,8 +27,9 @@ export default function Options({ p }: Props) {
   const doVote = async (e: number) => {
     setSelected(e);
     const newPoll = await vote(poll.id, e);
-    console.log("n", newPoll);
-    setPoll(newPoll);
+    if (newPoll) {
+      setPoll(newPoll);
+    }
   };
 
   return (
@@ -114,7 +115,7 @@ function getIsOpen(poll: Poll) {
   const dayDecider = dayDifference > 1 ? `in ${dayDifference} days` : "";
   const pollInfo = `Ends ${dayDecider} at ${date.toTimeString()}`;
 
-  const isOpen = poll.open && dayDifference > 0;
-  const isOpenText = poll.open && dayDifference > 0 ? pollInfo : "Closed";
+  const isOpen = poll.open;
+  const isOpenText = poll.open ? pollInfo : "Closed";
   return [isOpen, isOpenText];
 }

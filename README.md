@@ -16,11 +16,9 @@ Three phases to get data:
 
 TODO:
 
-- Add information about how this avoids shady gambling sponsors?
-- Change blog post to have image showing
 - Continue blog posts
+- Add information about how this avoids shady gambling sponsors?
 - Data vizualization for money given to valve and how much goes to teams
-- Create script to auto close polls that are past
 - Limit polls and lazy load after 5 or 10
 - Allow one poll to have its own page?
 

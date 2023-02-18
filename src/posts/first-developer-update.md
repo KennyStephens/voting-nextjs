@@ -7,6 +7,8 @@
   alt: "Laptop with a half open lid. Photo by Ales Nesetril on Unsplash"
 ---
 
+![Laptop with a half open lid](/images/posts/half-open-laptop.jpg)
+
 Welcome to the maiden blog post of the NeutralStack.io site! The goal of this site is to provide a polling platform for people to engage with a professional tier 2 DotA team as well as make a case for higher wages for teir 2 DotA teams. As the first version of this site begins to take shape, I want to talk about some of the technologies that are used and why they were decided on.
 
 ## Front-end
@@ -31,4 +33,6 @@ On first draft of the site, user accounts originally authenticated with a userna
 
 ## Conclusion
 
-This website uses some cutting edge technologies to deliver a great experience to users and I hope to only improve on what I have made so far. Things are far from perfect right now and its an ever evolving project. Check back in often or sign up for the [newsletter](https://neutralstack.io/) to get notified of future updates! Thank you for taking the time to browse the site and read this post! It means the world to me that I can create a project that will hopefully be used to change lives and help people while growing a game that I know and love.
+This website uses some cutting edge technologies to deliver a great experience to users and I hope to only improve on what I have made so far. Things are far from perfect right now and its an ever evolving project.
+
+Check back in often or sign up for the [newsletter](https://neutralstack.io/#newsletter) to get notified of future updates! Thank you for taking the time to browse the site and read this post! It means the world to me that I can create a project that will hopefully be used to change lives and help people while growing a game that I know and love.
