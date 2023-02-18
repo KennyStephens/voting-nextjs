@@ -18,7 +18,6 @@ TODO:
 
 - Add information about how this avoids shady gambling sponsors?
 - Change blog post to have image showing
-- Add analytics for views
 - Continue blog posts
 - Data vizualization for money given to valve and how much goes to teams
 - Create script to auto close polls that are past
