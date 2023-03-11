@@ -28,7 +28,7 @@ export async function getStaticProps() {
 
 const title = "Home | NeutralStack.io";
 const meta =
-  "Join the first ever community owned eSports team and let your voice be heard in our community run polls. Help support DotA 2 divsion 2 players.";
+  "Join the first ever community owned eSports team and let your voice be heard in our community run polls. Help support the players you love and the game you enjoy.";
 const metaImage =
   "https://neutralstack.io/_next/image?url=%2Fimages%2Flogo.png";
 

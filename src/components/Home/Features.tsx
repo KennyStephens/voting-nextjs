@@ -8,19 +8,18 @@ import {
 
 export default function Features() {
   return (
-    <div className="container mx-auto">
-      <div className="bg-white py-12 sm:py-16 lg:py-20">
+    <div className="container mx-auto bg-white">
+      <div className="py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="sm:text-center">
             <h2 className="text-lg font-semibold leading-8 text-indigo-600">
               Power To The Players
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Don&apos;t waste money on other teams
+              The Power of Crowdfunding in Esports
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-              Support your favorite players directly while pushing for change in
-              the community.
+              A Closer Look at Our Crowdfunded Esports Team
             </p>
           </div>
 
@@ -32,11 +31,10 @@ export default function Features() {
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
                   <p className="text-lg font-semibold leading-8 text-gray-900">
-                    Support the players
+                    Support Your Players
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    Help division two players make it big with your
-                    contributions directly to the team.
+                    Support the growth of esports by empowering emerging talent with resources to compete at the highest level. Your donation can help up-and-coming players achieve greatness.
                   </p>
                 </div>
               </div>
@@ -50,8 +48,7 @@ export default function Features() {
                     1:1 Voting Power
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    The more you donate to the team, the higher your voting
-                    power will be.
+                    Maximize your impact on our team&apos;s decisions by donating more and increasing your voting power. The higher your contribution, the more influence you&apos;ll have in shaping the team&apos;s future.
                   </p>
                 </div>
               </div>
@@ -62,11 +59,10 @@ export default function Features() {
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
                   <p className="text-lg font-semibold leading-8 text-gray-900">
-                    Money back guaruntee
+                    Money Back Guarantee
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    If the team doesn&apos;t make it past the open qualifiers,
-                    all money gets refunded.
+                    With our no-risk donation policy, you can support our team with confidence knowing that if we do not make it past the open qualifiers or fail to reach our fundraising goal, you will receive a full refund.
                   </p>
                 </div>
               </div>
@@ -77,11 +73,10 @@ export default function Features() {
                 </div>
                 <div className="sm:min-w-0 sm:flex-1">
                   <p className="text-lg font-semibold leading-8 text-gray-900">
-                    True transparency
+                    True Transparency
                   </p>
                   <p className="mt-2 text-base leading-7 text-gray-600">
-                    We publish team bank statements every month so you know
-                    right where your money goes.
+                    Stay informed about where your hard-earned money is going with our monthly publication of bank statements, ensuring complete transparency of your donation&apos;s impact
                   </p>
                 </div>
               </div>

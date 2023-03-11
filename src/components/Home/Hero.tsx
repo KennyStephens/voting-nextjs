@@ -48,11 +48,10 @@ export default function Hero() {
             </div> */}
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-                Create history one vote at a time
+                Donate and Decide
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                Join the first ever community owned eSports team and have a say
-                in how the team operates.
+                Participate in the First Crowdfunded Dota 2 Esports Team and Share the Glory of Victory
               </p>
               <div className="mt-8 flex gap-x-4 sm:justify-center">
                 <Link

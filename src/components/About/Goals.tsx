@@ -9,16 +9,12 @@ export default function Goals() {
       <div className="flex justify-evenly text-center flex-wrap md:flex-nowrap text-lg bg-white  ">
         <div className="w-full">
           <p className="p-10 font-mono">
-            Create the world&apos;s first community owned eSports team that will
-            engage users and allow them to directly contribute to the growth of
-            the professional scene of DotA 2.
+            Build the world&apos;s first community-owned esports team, empowering users to directly contribute to the growth and development of the professional DotA 2 scene while fostering a strong sense of community and engagement.
           </p>
         </div>
         <div className="w-full border-t-2 md:border-t-0 md:border-l-2 border-dashed border-black">
           <p className="p-10 font-mono">
-            Convince organizations (specifically Valve) who host tournaments to
-            pay their players better at lower levels to reduce the bar of entry
-            into the eSports world.
+            Persuade tournament-hosting organizations, particularly Valve, to increase their financial compensation to players at lower levels, with the ultimate goal of lowering the barrier of entry into the world of eSports.
           </p>
         </div>
       </div>
