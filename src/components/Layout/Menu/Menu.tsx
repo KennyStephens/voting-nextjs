@@ -19,7 +19,7 @@ export default function Menu() {
               aria-label="Global"
             >
               <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
-                <Link prefetch={false} href="/">
+                <Link href="/">
                   <span className="sr-only">NeutralStack</span>
                   <Image
                     className="inline"

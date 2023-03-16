@@ -55,7 +55,6 @@ export default function Hero() {
               </p>
               <div className="mt-8 flex gap-x-4 sm:justify-center">
                 <Link
-                  prefetch={false}
                   href="/auth/signup"
                   className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
                 >
@@ -65,7 +64,6 @@ export default function Hero() {
                   </span>
                 </Link>
                 <Link
-                  prefetch={false}
                   href="/about"
                   className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
                 >
