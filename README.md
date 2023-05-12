@@ -1,18 +1,10 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Voting Frontend
 
-Questions:
+This project is written in Next.js with tailwind css. This frontend serves as a few things:
 
-Three phases to get data:
-
-1. Build Time
-   - getStaticProps
-   - getStaticPaths (used for dynamic routes)
-2. Server-side rendered
-   - getServerSideProps
-   - When would I use this? When the page must be blocked until the data is fetched? But still needed for SEO?
-3. Client-side
-   - SWR - https://swr.vercel.app/ async requets
-   - Use when the page can load without the data and SEO is not a problem?
+1. The marketing side of a voting platform used to raise funds for a community crowd funded dota2 esports team.
+2. The blog side of the voting platform to increase SEO and let people know what is going on
+3. The actual voting and poll area including an authentication flow
 
 TODO:
 
@@ -23,9 +15,9 @@ TODO:
 Emails:
 
 - Create email template for newsletter (include unsubscribe link)
-- Create an email template for a poll closing soon? Maybe not...
+- Create an email template for a poll closing soon?
 
-Blog ideas:
+Post ideas:
 
 (Make sure to internally link to different pages)
 
