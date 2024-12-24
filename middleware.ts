@@ -10,6 +10,7 @@ export function middleware(request: NextRequest) {
 
   if (jwt && protectedRoutes.includes(request.nextUrl.pathname)) {
     const currentUser = jwtDecode<User>(jwt);
+    console.log("check texts")
 
     if (!currentUser.exp || Date.now() > currentUser.exp * 1000) {
       request.cookies.delete("auth");
